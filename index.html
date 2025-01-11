@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">BlogSpace</div>
+            <div class="nav-toggle"><i class="fas fa-bars"></i></div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" id="new-post-btn">New Post</a></li>
+                <li><a href="#" id="drafts-btn">Drafts</a></li>
+                <li><a href="#" id="notes-btn">Notes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="posts-section">
+            <div class="posts-container"></div>
+        </section>
+
+        <div id="editor-modal" class="modal">
+            <div class="modal-content">
+                <div class="editor-toolbar">
+                    <button onclick="formatText('bold')"><i class="fas fa-bold"></i></button>
+                    <button onclick="formatText('italic')"><i class="fas fa-italic"></i></button>
+                    <button onclick="formatText('underline')"><i class="fas fa-underline"></i></button>
+                    <button onclick="formatHeading()"><i class="fas fa-heading"></i></button>
+                    <button onclick="formatList()"><i class="fas fa-list-ul"></i></button>
+                </div>
+                <input type="text" id="post-title" placeholder="Enter post title...">
+                <div id="editor" contenteditable="true" class="editor-content"></div>
+                <div class="editor-actions">
+                    <button id="save-draft" class="btn-secondary">Save as Draft</button>
+                    <button id="save-post" class="btn-primary">Publish</button>
+                    <button id="close-editor" class="btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="drafts-modal" class="modal">
+            <div class="modal-content">
+                <h2>Drafts</h2>
+                <div class="drafts-list"></div>
+                <div class="editor-actions">
+                    <button id="close-drafts" class="btn-secondary">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="notes-modal" class="modal">
+            <div class="modal-content">
+                <h2>Quick Notes</h2>
+                <textarea id="notes-area" placeholder="Jot down your thoughts..."></textarea>
+                <div class="notes-list"></div>
+                <div class="editor-actions">
+                    <button id="save-note" class="btn-primary">Save Note</button>
+                    <button id="close-notes" class="btn-secondary">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
