@@ -426,6 +426,7 @@ main {
     resize: vertical;
 }
 
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }

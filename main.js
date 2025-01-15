@@ -367,6 +367,7 @@ window.handleNoteDelete = (id) => {
   }
 };
 
+
 // Initialize
 displayPosts();
 
