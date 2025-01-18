@@ -73,6 +73,13 @@ BlogSpace is a web application designed to help writers efficiently manage their
 ![Screenshot 2025-01-18 200357](https://github.com/user-attachments/assets/d3c242e6-c6c8-48aa-af70-6579edca74cf)
 
 
+#### Add blog content that looks good when you click the publish button.
+![Screenshot 2025-01-18 201145](https://github.com/user-attachments/assets/dcce0d7a-89ab-4e38-ac42-18351368d675)
+
+
+
+
+
 
 ## Technical Details
 
