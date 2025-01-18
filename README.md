@@ -50,7 +50,6 @@ BlogSpace is a web application designed to help writers manage their blog posts,
 
 ## Live Link
 
-Check out the live application [here](blog-website-drab-seven.vercel.app
-).
+Check out the live application [here](https://blog-website-drab-seven.vercel.app/).
 
 
